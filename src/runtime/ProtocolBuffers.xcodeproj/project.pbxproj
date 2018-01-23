@@ -95,6 +95,7 @@
 		3F887B4919102C6000AFDD46 /* libProtocolBuffers.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D2AAC07E0554694100DB518D /* libProtocolBuffers.a */; settings = {ATTRIBUTES = (Required, ); }; };
 		3FD0CF351959F700000C8F68 /* Unittest_import_lite.pb.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FD0CF1E1959F700000C8F68 /* Unittest_import_lite.pb.m */; };
 		3FD0CF391959F700000C8F68 /* Unittest_lite_imports_nonlite.pb.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FD0CF261959F700000C8F68 /* Unittest_lite_imports_nonlite.pb.m */; };
+		83EEE47B1FDB6BC4008D8540 /* ProtocolBuffers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 097A223F1B8B10BB00D02243 /* ProtocolBuffers.framework */; };
 		AA747D9F0F9514B9006C5449 /* ProtocolBuffers_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = AA747D9E0F9514B9006C5449 /* ProtocolBuffers_Prefix.pch */; };
 		AACBBE4A0F95108600F1A2B1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AACBBE490F95108600F1A2B1 /* Foundation.framework */; };
 		C55591B1127A04EF002343CA /* PBArray.m in Sources */ = {isa = PBXBuildFile; fileRef = C5F36E041275FA5A00013BB4 /* PBArray.m */; };
@@ -166,6 +167,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = D2AAC07D0554694100DB518D;
 			remoteInfo = ProtocolBuffers;
+		};
+		83EEE4791FDB6BB9008D8540 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0867D690FE84028FC02AAC07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 097A223E1B8B10BB00D02243;
+			remoteInfo = ProtocolBuffers.framework;
 		};
 		C5B03FF312517BD10087887C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -328,6 +336,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83EEE47B1FDB6BC4008D8540 /* ProtocolBuffers.framework in Frameworks */,
 				AACBBE4A0F95108600F1A2B1 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -754,6 +763,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				83EEE47A1FDB6BB9008D8540 /* PBXTargetDependency */,
 			);
 			name = ProtocolBuffers;
 			productName = ProtocolBuffers;
@@ -965,6 +975,11 @@
 			target = D2AAC07D0554694100DB518D /* ProtocolBuffers */;
 			targetProxy = 3F933D7719560DD2002F22FC /* PBXContainerItemProxy */;
 		};
+		83EEE47A1FDB6BB9008D8540 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 097A223E1B8B10BB00D02243 /* ProtocolBuffers.framework */;
+			targetProxy = 83EEE4791FDB6BB9008D8540 /* PBXContainerItemProxy */;
+		};
 		C5B03FF412517BD10087887C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = D2AAC07D0554694100DB518D /* ProtocolBuffers */;
@@ -1017,6 +1032,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = NO;
 				PRIVATE_HEADERS_FOLDER_PATH = "$(CONTENTS_FOLDER_PATH)/PrivateHeaders";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.wire.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = ProtocolBuffers;
@@ -1067,6 +1083,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = NO;
+				ONLY_ACTIVE_ARCH = NO;
 				PRIVATE_HEADERS_FOLDER_PATH = "$(CONTENTS_FOLDER_PATH)/PrivateHeaders";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.wire.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = ProtocolBuffers;
@@ -1156,14 +1173,14 @@
 				HEADER_SEARCH_PATHS = ../ProtocolBuffers;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				OBJROOT = Build;
-				ONLY_ACTIVE_ARCH = YES;
+				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = "-ObjC";
 				PRIVATE_HEADERS_FOLDER_PATH = ../ProtocolBuffers/private;
 				PUBLIC_HEADERS_FOLDER_PATH = ../ProtocolBuffers;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SYMROOT = Build/Products;
-				VALID_ARCHS = "arm64 armv7 armv7s i386";
+				VALID_ARCHS = "arm64 armv7 armv7s";
 			};
 			name = Debug;
 		};
@@ -1197,7 +1214,7 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SYMROOT = Build/Products;
-				VALID_ARCHS = "arm64 armv7 armv7s i386";
+				VALID_ARCHS = "arm64 armv7 armv7s";
 			};
 			name = Release;
 		};
@@ -1379,6 +1396,7 @@
 				3F25B81D1D41431F0023759A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C5B03F7A125179F50087887C /* Build configuration list for PBXNativeTarget "UnitTests1" */ = {
 			isa = XCConfigurationList;
