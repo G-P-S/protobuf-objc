@@ -1,0 +1,9 @@
+{
+    "version": "1.9.11",
+
+    "info": {
+        "type": "lib",
+        "visibility": "public",
+        "platforms": ["ios"]
+    }
+}
