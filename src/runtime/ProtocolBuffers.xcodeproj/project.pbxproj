@@ -782,9 +782,9 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		097A223E1B8B10BB00D02243 /* ProtocolBuffers.framework */ = {
+		097A223E1B8B10BB00D02243 /* ProtocolBuffers.framework iOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 097A22561B8B10BC00D02243 /* Build configuration list for PBXNativeTarget "ProtocolBuffers.framework" */;
+			buildConfigurationList = 097A22561B8B10BC00D02243 /* Build configuration list for PBXNativeTarget "ProtocolBuffers.framework iOS" */;
 			buildPhases = (
 				097A223A1B8B10BB00D02243 /* Sources */,
 				097A223B1B8B10BB00D02243 /* Frameworks */,
@@ -795,7 +795,7 @@
 			);
 			dependencies = (
 			);
-			name = ProtocolBuffers.framework;
+			name = "ProtocolBuffers.framework iOS";
 			productName = ProtocolBuffers.framework;
 			productReference = 097A223F1B8B10BB00D02243 /* ProtocolBuffers.framework */;
 			productType = "com.apple.product-type.framework";
@@ -839,9 +839,9 @@
 			productReference = C5B03F76125179F30087887C /* UnitTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		C9DEB0A72360CCF200A5F9A4 /* ProtocolBuffers.framework (watchOS) */ = {
+		C9DEB0A72360CCF200A5F9A4 /* ProtocolBuffers.framework watchOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C9DEB0B02360CCF200A5F9A4 /* Build configuration list for PBXNativeTarget "ProtocolBuffers.framework (watchOS)" */;
+			buildConfigurationList = C9DEB0B02360CCF200A5F9A4 /* Build configuration list for PBXNativeTarget "ProtocolBuffers.framework watchOS" */;
 			buildPhases = (
 				C9DEB0A32360CCF200A5F9A4 /* Headers */,
 				C9DEB0A42360CCF200A5F9A4 /* Sources */,
@@ -852,7 +852,7 @@
 			);
 			dependencies = (
 			);
-			name = "ProtocolBuffers.framework (watchOS)";
+			name = "ProtocolBuffers.framework watchOS";
 			productName = "ProtocolBuffers.framework (watchOS)";
 			productReference = C9DEB0A82360CCF200A5F9A4 /* ProtocolBuffers.framework */;
 			productType = "com.apple.product-type.framework";
@@ -916,8 +916,8 @@
 			targets = (
 				D2AAC07D0554694100DB518D /* ProtocolBuffers */,
 				C5B03F75125179F30087887C /* UnitTests1 */,
-				097A223E1B8B10BB00D02243 /* ProtocolBuffers.framework */,
-				C9DEB0A72360CCF200A5F9A4 /* ProtocolBuffers.framework (watchOS) */,
+				097A223E1B8B10BB00D02243 /* ProtocolBuffers.framework iOS */,
+				C9DEB0A72360CCF200A5F9A4 /* ProtocolBuffers.framework watchOS */,
 				3F25B8121D41431E0023759A /* UnitTests */,
 			);
 		};
@@ -1856,7 +1856,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		097A22561B8B10BC00D02243 /* Build configuration list for PBXNativeTarget "ProtocolBuffers.framework" */ = {
+		097A22561B8B10BC00D02243 /* Build configuration list for PBXNativeTarget "ProtocolBuffers.framework iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				097A22521B8B10BC00D02243 /* Debug */,
@@ -1906,7 +1906,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C9DEB0B02360CCF200A5F9A4 /* Build configuration list for PBXNativeTarget "ProtocolBuffers.framework (watchOS)" */ = {
+		C9DEB0B02360CCF200A5F9A4 /* Build configuration list for PBXNativeTarget "ProtocolBuffers.framework watchOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C9DEB0AD2360CCF200A5F9A4 /* Debug */,
